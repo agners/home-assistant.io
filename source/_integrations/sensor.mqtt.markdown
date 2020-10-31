@@ -111,7 +111,7 @@ state_topic:
   required: true
   type: string
 unique_id:
-  description: "An ID that uniquely identifies this sensor. If two sensors have the same unique ID, Home Assistant will raise an exception."
+  description: "An ID for this sensor. Needs to be unique for every MQTT sensor. On discoverying a second sensors with the same `unique_id` Home Assistant will print an error and ignore the second sensor."
   required: false
   type: string
 unit_of_measurement:
